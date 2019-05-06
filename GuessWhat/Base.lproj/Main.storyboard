@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessWhat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="gDS-Jp-ekA" kind="show" identifier="HomeViewController" id="eXc-GB-St4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="27"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="f5B-9C-a8y">
+            <objects>
+                <viewController id="gDS-Jp-ekA" customClass="HomeViewController" customModule="GuessWhat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7HV-G3-VHa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pf9-5e-t9s"/>
+                    </view>
+                    <connections>
+                        <segue destination="Eyi-cz-uJZ" kind="show" identifier="FormViewController" id="ODo-Zj-RJw"/>
+                        <segue destination="Kcm-du-CQJ" kind="show" identifier="HistoryViewController" id="lOn-Ra-48M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCn-uU-tgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="27"/>
+        </scene>
+        <!--Form View Controller-->
+        <scene sceneID="1Em-rB-FmL">
+            <objects>
+                <viewController id="Eyi-cz-uJZ" customClass="FormViewController" customModule="GuessWhat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mNu-FX-hYy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XZ1-MO-X3n"/>
+                    </view>
+                    <connections>
+                        <segue destination="Kir-pa-9oB" kind="show" identifier="GuessViewController" id="MwZ-x2-00h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkk-jH-Ood" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="-217"/>
+        </scene>
+        <!--Guess View Controller-->
+        <scene sceneID="fyh-AU-qql">
+            <objects>
+                <viewController id="Kir-pa-9oB" customClass="GuessViewController" customModule="GuessWhat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hNS-Oq-75c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ejY-Mk-QlI"/>
+                    </view>
+                    <connections>
+                        <segue destination="bWs-EJ-AuN" kind="show" identifier="SummaryViewController" id="amD-gk-yhU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gV0-Az-fNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2586" y="-217"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="zdN-uB-9qj">
+            <objects>
+                <viewController id="Kcm-du-CQJ" customClass="HistoryViewController" customModule="GuessWhat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AiK-4k-l7F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WcZ-cx-YWn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ds-lQ-cQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="801"/>
+        </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="6Ef-63-uXf">
+            <objects>
+                <viewController id="bWs-EJ-AuN" customClass="SummaryViewController" customModule="GuessWhat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eo5-ut-vFK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gjT-Op-Xyo"/>
+                    </view>
+                    <connections>
+                        <segue destination="Kcm-du-CQJ" kind="show" identifier="HistoryViewController" id="SQx-ib-ica"/>
+                        <segue destination="gDS-Jp-ekA" kind="show" identifier="HomeViewController" id="Vfh-Pg-lQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5A4-qO-ahU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3561" y="27"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SQx-ib-ica"/>
+        <segue reference="Vfh-Pg-lQI"/>
+    </inferredMetricsTieBreakers>
+</document>

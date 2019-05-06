@@ -1,0 +1,6 @@
+framework module Pods_GuessWhat {
+  umbrella header "Pods-GuessWhat-umbrella.h"
+
+  export *
+  module * { export * }
+}
